@@ -3,93 +3,237 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Discover amazing travel destinations around the world with exclusive deals and packages">
+    <meta name="keywords" content="travel, destinations, vacation, holiday, adventure">
+    <link rel="stylesheet" href="./style.css">
+    <title>Discover Paradise - Your Dream Destination Awaits</title>
+
 </head>
 <body>
-    <header style="background-color: #2c3e50; color: #ecf0f1; padding: 20px;">
-        <style>
-            body {
-                background-color: #f4f6f7;
-                color: #2c3e50;
-                font-family: Arial, sans-serif;
-            }
-            nav ul {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                gap: 20px;
-            }
-            nav ul li a {
-                color: #ecf0f1;
-                text-decoration: none;
-                font-weight: bold;
-                transition: color 0.3s;
-            }
-            nav ul li a:hover {
-                color: #e67e22;
-            }
-            main section {
-                background: #fff;
-                margin: 20px 0;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 2px 8px rgba(44,62,80,0.05);
-            }
-            aside {
-                background: #e67e22;
-                color: #fff;
-                padding: 15px;
-                border-radius: 8px;
-                margin: 20px 0;
-            }
-            footer {
-                background: #2c3e50;
-                color: #ecf0f1;
-                text-align: center;
-                padding: 10px 0;
-                border-radius: 0 0 8px 8px;
-                margin-top: 20px;
-            }
-        </style>
-        <h1>My Complex Website</h1>
+    <header>
         <nav>
-            <ul>
+            <div class="logo">🌍 TravelDreams</div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
                 <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#booking">Book Now</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
     </header>
-    <main>
-        <section id="home">
-            <h2>Welcome</h2>
-            <p>This is a sample complex website layout using semantic HTML5 tags.</p>
-        </section>
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Responsive design</li>
-                <li>Semantic structure</li>
-                <li>Easy navigation</li>
-            </ul>
-        </section>
-        <section id="about">
-            <h2>About Us</h2>
-            <p>We are passionate about building modern and accessible websites.</p>
-        </section>
-    </main>
-    <aside>
-        <h3>Related Links</h3>
-        <ul>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Support</a></li>
-        </ul>
-    </aside>
-    <footer>
-        <p>&copy; 2024 My Complex Website. All rights reserved.</p>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Discover Your Next Adventure</h1>
+            <p>Explore breathtaking destinations around the globe</p>
+            <a href="#destinations" class="cta-button">Explore Now</a>
+        </div>
+    </section>
+
+    <section id="destinations">
+        <h2>Popular Destinations</h2>
+        <div class="destinations-grid">
+            <article class="destination-card" onclick="window.open('https://www.santorini.com', '_blank')">
+                <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800" alt="Santorini, Greece">
+                <div class="card-content">
+                    <h3>Santorini, Greece</h3>
+                    <div class="card-tags">
+                        <span class="tag">🏖️ Beach</span>
+                        <span class="tag">🏛️ Historic</span>
+                        <span class="tag">🌅 Sunset Views</span>
+                    </div>
+                    <p>Experience the iconic white-washed buildings and stunning sunsets over the Aegean Sea.</p>
+                    <div class="price">From $1,299</div>
+                </div>
+            </article>
+
+            <article class="destination-card" onclick="window.open('https://www.japan.travel/en/destinations/kanto/tokyo/', '_blank')">
+                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800" alt="Tokyo, Japan">
+                <div class="card-content">
+                    <h3>Tokyo, Japan</h3>
+                    <div class="card-tags">
+                        <span class="tag">🏙️ Urban</span>
+                        <span class="tag">🍜 Culinary</span>
+                        <span class="tag">🎎 Cultural</span>
+                    </div>
+                    <p>Immerse yourself in the perfect blend of ancient tradition and cutting-edge technology.</p>
+                    <div class="price">From $1,599</div>
+                </div>
+            </article>
+
+            <article class="destination-card" onclick="window.open('https://www.banffnationalpark.com', '_blank')">
+                <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=800" alt="Banff, Canada">
+                <div class="card-content">
+                    <h3>Banff, Canada</h3>
+                    <div class="card-tags">
+                        <span class="tag">⛰️ Mountains</span>
+                        <span class="tag">🦌 Wildlife</span>
+                        <span class="tag">❄️ Adventure</span>
+                    </div>
+                    <p>Explore pristine mountain landscapes, turquoise lakes, and incredible wildlife.</p>
+                    <div class="price">From $999</div>
+                </div>
+            </article>
+
+            <article class="destination-card" onclick="window.open('https://www.maldives.com', '_blank')">
+                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800" alt="Maldives">
+                <div class="card-content">
+                    <h3>Maldives</h3>
+                    <div class="card-tags">
+                        <span class="tag">🏝️ Island</span>
+                        <span class="tag">🤿 Diving</span>
+                        <span class="tag">💑 Romantic</span>
+                    </div>
+                    <p>Relax in overwater bungalows surrounded by crystal-clear waters and vibrant marine life.</p>
+                    <div class="price">From $2,199</div>
+                </div>
+            </article>
+
+            <article class="destination-card" onclick="window.open('https://www.peru.travel/en/attractions/machu-picchu', '_blank')">
+                <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800" alt="Machu Picchu, Peru">
+                <div class="card-content">
+                    <h3>Machu Picchu, Peru</h3>
+                    <div class="card-tags">
+                        <span class="tag">🏛️ Ancient</span>
+                        <span class="tag">🥾 Hiking</span>
+                        <span class="tag">📸 Iconic</span>
+                    </div>
+                    <p>Discover the mystical ancient Incan citadel nestled high in the Andes Mountains.</p>
+                    <div class="price">From $1,399</div>
+                </div>
+            </article>
+
+            <article class="destination-card" onclick="window.open('https://www.dubaitourism.ae', '_blank')">
+                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800" alt="Dubai, UAE">
+                <div class="card-content">
+                    <h3>Dubai, UAE</h3>
+                    <div class="card-tags">
+                        <span class="tag">🏙️ Luxury</span>
+                        <span class="tag">🛍️ Shopping</span>
+                        <span class="tag">🏖️ Desert & Beach</span>
+                    </div>
+                    <p>Experience ultimate luxury with world-class shopping, dining, and architectural marvels.</p>
+                    <div class="price">From $1,799</div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="features" id="features">
+        <h2>Why Choose TravelDreams?</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <div class="feature-icon">✈️</div>
+                <h3>Best Price Guarantee</h3>
+                <p>We match any competitor's price and beat it by 10%</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">🛡️</div>
+                <h3>Travel Insurance</h3>
+                <p>Comprehensive coverage for your peace of mind</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">📞</div>
+                <h3>24/7 Support</h3>
+                <p>Our team is always here to help you</p>
+            </div>
+            <div class="feature-item">
+                <div class="feature-icon">⭐</div>
+                <h3>Expert Guides</h3>
+                <p>Local professionals who know every corner</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="booking-form" id="booking">
+        <h2>Book Your Dream Vacation</h2>
+        <form id="bookingForm">
+            <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" required placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" required placeholder="+1 234 567 8900">
+            </div>
+            <div class="form-group">
+                <label for="destination">Select Destination *</label>
+                <select id="destination" name="destination" required>
+                    <option value="">Choose a destination</option>
+                    <option value="santorini">Santorini, Greece</option>
+                    <option value="tokyo">Tokyo, Japan</option>
+                    <option value="banff">Banff, Canada</option>
+                    <option value="maldives">Maldives</option>
+                    <option value="machu-picchu">Machu Picchu, Peru</option>
+                    <option value="dubai">Dubai, UAE</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="date">Travel Date *</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group">
+                <label for="travelers">Number of Travelers *</label>
+                <input type="number" id="travelers" name="travelers" min="1" max="10" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any special requirements or questions?"></textarea>
+            </div>
+            <button type="submit">Request Quote</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="https://www.tripadvisor.com" target="_blank">Reviews</a>
+            <a href="#booking">Book</a>
+        </div>
+        <p>&copy; 2024 TravelDreams. All rights reserved. | Privacy Policy | Terms of Service</p>
+        <p>📧 info@traveldreams.com | 📞 +1-800-TRAVEL-1</p>
     </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        document.getElementById('bookingForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your booking request! Our team will contact you within 24 hours.');
+            e.target.reset();
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
