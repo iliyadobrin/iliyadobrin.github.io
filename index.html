@@ -1,239 +1,381 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover amazing travel destinations around the world with exclusive deals and packages">
-    <meta name="keywords" content="travel, destinations, vacation, holiday, adventure">
-    <link rel="stylesheet" href="./style.css">
-    <title>Discover Paradise - Your Dream Destination Awaits</title>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IronFuel Nutrition | Bodybuilding Supplements Shop</title>
+  <meta name="description" content="Premium bodybuilding supplements shop – protein, pre-workout, creatine, BCAAs, and more. Build muscle, burn fat, and recover faster with IronFuel Nutrition." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo">🌍 TravelDreams</div>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#destinations">Destinations</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#booking">Book Now</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+  <div id="page-wrapper">
+    <!-- ================= HEADER ================= -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <span class="logo-icon">IF</span>
+          <div class="logo-text">
+            <span class="brand">IronFuel</span>
+            <span class="tagline">Bodybuilding Nutrition</span>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#hero">Home</a>
+          <a href="#products">Shop</a>
+          <a href="#bundles">Bundles</a>
+          <a href="#about">About</a>
+          <a href="#faq">FAQ</a>
         </nav>
+
+        <button class="cart-toggle" id="cartToggle" aria-label="Open cart">
+          <span class="cart-icon">🛒</span>
+          <span class="cart-label">Cart</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
     </header>
 
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Discover Your Next Adventure</h1>
-            <p>Explore breathtaking destinations around the globe</p>
-            <a href="#destinations" class="cta-button">Explore Now</a>
+    <!-- ================= HERO ================= -->
+    <section id="hero" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Premium Sports Nutrition</p>
+          <h1>Fuel Your <span>Strength</span>, Sculpt Your <span>Physique</span></h1>
+          <p class="hero-text">
+            Discover science-backed bodybuilding supplements crafted to maximize muscle growth,
+            accelerate recovery, and keep your performance at peak level.
+          </p>
+          <div class="hero-actions">
+            <a href="#products" class="btn btn-primary">Shop Bestsellers</a>
+            <a href="#bundles" class="btn btn-ghost">View Goal-Based Stacks</a>
+          </div>
+          <div class="hero-highlights">
+            <div>
+              <span class="highlight-number">+50</span>
+              <span class="highlight-label">Premium Products</span>
+            </div>
+            <div>
+              <span class="highlight-number">4.9★</span>
+              <span class="highlight-label">Athlete Rated</span>
+            </div>
+            <div>
+              <span class="highlight-number">100%</span>
+              <span class="highlight-label">Lab Tested</span>
+            </div>
+          </div>
         </div>
+
+        <div class="hero-media">
+          <div class="hero-bottle hero-bottle--large"></div>
+          <div class="hero-bottle hero-bottle--medium"></div>
+          <div class="hero-bottle hero-bottle--small"></div>
+          <div class="hero-badge">Free Shipping over $79</div>
+          <div class="hero-badge hero-badge--secondary">Subscribe & Save 15%</div>
+        </div>
+      </div>
     </section>
 
-    <section id="destinations">
-        <h2>Popular Destinations</h2>
-        <div class="destinations-grid">
-            <article class="destination-card" onclick="window.open('https://www.santorini.com', '_blank')">
-                <img src="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?w=800" alt="Santorini, Greece">
-                <div class="card-content">
-                    <h3>Santorini, Greece</h3>
-                    <div class="card-tags">
-                        <span class="tag">🏖️ Beach</span>
-                        <span class="tag">🏛️ Historic</span>
-                        <span class="tag">🌅 Sunset Views</span>
-                    </div>
-                    <p>Experience the iconic white-washed buildings and stunning sunsets over the Aegean Sea.</p>
-                    <div class="price">From $1,299</div>
-                </div>
-            </article>
+    <!-- ================= PRODUCT FILTER BAR ================= -->
+    <section id="products" class="products-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Shop Supplements</h2>
+          <p>Choose by goal, category, or stack your own ultimate routine.</p>
+        </header>
 
-            <article class="destination-card" onclick="window.open('https://www.japan.travel/en/destinations/kanto/tokyo/', '_blank')">
-                <img src="https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?w=800" alt="Tokyo, Japan">
-                <div class="card-content">
-                    <h3>Tokyo, Japan</h3>
-                    <div class="card-tags">
-                        <span class="tag">🏙️ Urban</span>
-                        <span class="tag">🍜 Culinary</span>
-                        <span class="tag">🎎 Cultural</span>
-                    </div>
-                    <p>Immerse yourself in the perfect blend of ancient tradition and cutting-edge technology.</p>
-                    <div class="price">From $1,599</div>
-                </div>
-            </article>
+        <div class="filters-bar" aria-label="Product filters and tools">
+          <div class="filter-group">
+            <span class="filter-label">Category:</span>
+            <button class="chip chip-active" data-filter="all">All</button>
+            <button class="chip" data-filter="protein">Protein</button>
+            <button class="chip" data-filter="preworkout">Pre-Workout</button>
+            <button class="chip" data-filter="creatine">Creatine</button>
+            <button class="chip" data-filter="recovery">Recovery</button>
+            <button class="chip" data-filter="vitamins">Vitamins</button>
+          </div>
 
-            <article class="destination-card" onclick="window.open('https://www.banffnationalpark.com', '_blank')">
-                <img src="https://images.unsplash.com/photo-1503614472-8c93d56e92ce?w=800" alt="Banff, Canada">
-                <div class="card-content">
-                    <h3>Banff, Canada</h3>
-                    <div class="card-tags">
-                        <span class="tag">⛰️ Mountains</span>
-                        <span class="tag">🦌 Wildlife</span>
-                        <span class="tag">❄️ Adventure</span>
-                    </div>
-                    <p>Explore pristine mountain landscapes, turquoise lakes, and incredible wildlife.</p>
-                    <div class="price">From $999</div>
-                </div>
-            </article>
+          <div class="filter-group">
+            <label class="filter-label" for="goalSelect">Goal:</label>
+            <select id="goalSelect">
+              <option value="all">All goals</option>
+              <option value="muscle">Lean Muscle</option>
+              <option value="strength">Max Strength</option>
+              <option value="fatloss">Fat Loss</option>
+              <option value="endurance">Endurance</option>
+            </select>
+          </div>
 
-            <article class="destination-card" onclick="window.open('https://www.maldives.com', '_blank')">
-                <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=800" alt="Maldives">
-                <div class="card-content">
-                    <h3>Maldives</h3>
-                    <div class="card-tags">
-                        <span class="tag">🏝️ Island</span>
-                        <span class="tag">🤿 Diving</span>
-                        <span class="tag">💑 Romantic</span>
-                    </div>
-                    <p>Relax in overwater bungalows surrounded by crystal-clear waters and vibrant marine life.</p>
-                    <div class="price">From $2,199</div>
-                </div>
-            </article>
+          <div class="filter-group">
+            <label class="filter-label" for="sortSelect">Sort by:</label>
+            <select id="sortSelect">
+              <option value="featured">Featured</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="rating-desc">Rating: High to Low</option>
+            </select>
+          </div>
 
-            <article class="destination-card" onclick="window.open('https://www.peru.travel/en/attractions/machu-picchu', '_blank')">
-                <img src="https://images.unsplash.com/photo-1587595431973-160d0d94add1?w=800" alt="Machu Picchu, Peru">
-                <div class="card-content">
-                    <h3>Machu Picchu, Peru</h3>
-                    <div class="card-tags">
-                        <span class="tag">🏛️ Ancient</span>
-                        <span class="tag">🥾 Hiking</span>
-                        <span class="tag">📸 Iconic</span>
-                    </div>
-                    <p>Discover the mystical ancient Incan citadel nestled high in the Andes Mountains.</p>
-                    <div class="price">From $1,399</div>
-                </div>
-            </article>
-
-            <article class="destination-card" onclick="window.open('https://www.dubaitourism.ae', '_blank')">
-                <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800" alt="Dubai, UAE">
-                <div class="card-content">
-                    <h3>Dubai, UAE</h3>
-                    <div class="card-tags">
-                        <span class="tag">🏙️ Luxury</span>
-                        <span class="tag">🛍️ Shopping</span>
-                        <span class="tag">🏖️ Desert & Beach</span>
-                    </div>
-                    <p>Experience ultimate luxury with world-class shopping, dining, and architectural marvels.</p>
-                    <div class="price">From $1,799</div>
-                </div>
-            </article>
+          <div class="filter-group search-group">
+            <input id="searchInput" type="search" placeholder="Search products (e.g. whey, creatine)" />
+          </div>
         </div>
+
+        <div id="productsGrid" class="products-grid" aria-live="polite">
+          <!-- Products rendered by JavaScript -->
+        </div>
+      </div>
     </section>
 
-    <section class="features" id="features">
-        <h2>Why Choose TravelDreams?</h2>
-        <div class="features-grid">
-            <div class="feature-item">
-                <div class="feature-icon">✈️</div>
-                <h3>Best Price Guarantee</h3>
-                <p>We match any competitor's price and beat it by 10%</p>
+    <!-- ================= BUNDLES / STACKS ================= -->
+    <section id="bundles" class="bundles-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Goal-Based Stacks</h2>
+          <p>Curated supplement bundles designed by strength coaches and sports nutritionists.</p>
+        </header>
+
+        <div class="bundles-grid">
+          <article class="bundle-card">
+            <div class="bundle-badge">Most Popular</div>
+            <h3>Lean Mass Builder Stack</h3>
+            <p class="bundle-meta">Muscle · Strength · Recovery</p>
+            <ul class="bundle-list">
+              <li>100% Whey Isolate 2kg</li>
+              <li>Micronized Creatine Monohydrate 300g</li>
+              <li>Intra-Workout BCAA + Electrolytes</li>
+            </ul>
+            <div class="bundle-bottom">
+              <div>
+                <span class="bundle-price">$139</span>
+                <span class="bundle-savings">Save 18%</span>
+              </div>
+              <button class="btn btn-secondary" data-bundle="lean-mass">Add Stack</button>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">🛡️</div>
-                <h3>Travel Insurance</h3>
-                <p>Comprehensive coverage for your peace of mind</p>
+          </article>
+
+          <article class="bundle-card">
+            <div class="bundle-badge bundle-badge--blue">Shred</div>
+            <h3>Cut & Condition Stack</h3>
+            <p class="bundle-meta">Fat Loss · Energy · Focus</p>
+            <ul class="bundle-list">
+              <li>Thermo-Shred Fat Burner</li>
+              <li>Stim-Free Pre-Workout</li>
+              <li>CLA + L-Carnitine Softgels</li>
+            </ul>
+            <div class="bundle-bottom">
+              <div>
+                <span class="bundle-price">$119</span>
+                <span class="bundle-savings">Save 15%</span>
+              </div>
+              <button class="btn btn-secondary" data-bundle="cut-stack">Add Stack</button>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">📞</div>
-                <h3>24/7 Support</h3>
-                <p>Our team is always here to help you</p>
+          </article>
+
+          <article class="bundle-card">
+            <div class="bundle-badge bundle-badge--green">Performance</div>
+            <h3>Strength Performance Stack</h3>
+            <p class="bundle-meta">Power · Pumps · Recovery</p>
+            <ul class="bundle-list">
+              <li>High-Stim Pre-Workout</li>
+              <li>Creatine + Beta-Alanine Blend</li>
+              <li>Elite Recovery Casein</li>
+            </ul>
+            <div class="bundle-bottom">
+              <div>
+                <span class="bundle-price">$149</span>
+                <span class="bundle-savings">Save 20%</span>
+              </div>
+              <button class="btn btn-secondary" data-bundle="strength-stack">Add Stack</button>
             </div>
-            <div class="feature-item">
-                <div class="feature-icon">⭐</div>
-                <h3>Expert Guides</h3>
-                <p>Local professionals who know every corner</p>
-            </div>
+          </article>
         </div>
+      </div>
     </section>
 
-    <section class="booking-form" id="booking">
-        <h2>Book Your Dream Vacation</h2>
-        <form id="bookingForm">
-            <div class="form-group">
-                <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" required placeholder="John Doe">
-            </div>
-            <div class="form-group">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" required placeholder="john@example.com">
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number *</label>
-                <input type="tel" id="phone" name="phone" required placeholder="+1 234 567 8900">
-            </div>
-            <div class="form-group">
-                <label for="destination">Select Destination *</label>
-                <select id="destination" name="destination" required>
-                    <option value="">Choose a destination</option>
-                    <option value="santorini">Santorini, Greece</option>
-                    <option value="tokyo">Tokyo, Japan</option>
-                    <option value="banff">Banff, Canada</option>
-                    <option value="maldives">Maldives</option>
-                    <option value="machu-picchu">Machu Picchu, Peru</option>
-                    <option value="dubai">Dubai, UAE</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="date">Travel Date *</label>
-                <input type="date" id="date" name="date" required>
-            </div>
-            <div class="form-group">
-                <label for="travelers">Number of Travelers *</label>
-                <input type="number" id="travelers" name="travelers" min="1" max="10" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Special Requests</label>
-                <textarea id="message" name="message" rows="4" placeholder="Any special requirements or questions?"></textarea>
-            </div>
-            <button type="submit">Request Quote</button>
-        </form>
+    <!-- ================= ABOUT / BENEFITS ================= -->
+    <section id="about" class="about-section">
+      <div class="container about-grid">
+        <div>
+          <header class="section-header align-left">
+            <h2>Why Athletes Trust IronFuel</h2>
+          </header>
+          <p>
+            At IronFuel Nutrition, every formula is built from clinical research and third-party tested raw
+            materials. No proprietary blends, no fairy dust dosing – just effective, transparent labels and
+            performance you can feel.
+          </p>
+          <div class="pill-list">
+            <span>Non-proprietary blends</span>
+            <span>Informed-Sport tested</span>
+            <span>No banned substances</span>
+            <span>Macro-friendly flavors</span>
+            <span>Fast-digesting sources</span>
+          </div>
+        </div>
+
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">+25k</span>
+            <span class="stat-label">Athletes fueled</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">98%</span>
+            <span class="stat-label">Repeat customers</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">72h</span>
+            <span class="stat-label">Average recovery boost</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">3rd</span>
+            <span class="stat-label">Party lab tested</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <footer id="contact">
-        <div class="footer-links">
-            <a href="#home">Home</a>
-            <a href="#destinations">Destinations</a>
-            <a href="https://www.tripadvisor.com" target="_blank">Reviews</a>
-            <a href="#booking">Book</a>
+    <!-- ================= TESTIMONIALS ================= -->
+    <section class="testimonials-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>Trusted by Lifters & Coaches</h2>
+        </header>
+
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “The pre-workout is hands down the cleanest energy I’ve used. No crash, just insane focus and pumps.
+              I hit three PRs this month.”
+            </p>
+            <p class="testimonial-author">— Mark D., Powerlifter</p>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “My clients love the taste of the whey isolate and we’ve seen noticeable improvements in recovery
+              markers. Quality is top-tier.”
+            </p>
+            <p class="testimonial-author">— Coach L. Rivera, Strength Coach</p>
+          </article>
+
+          <article class="testimonial-card">
+            <p class="testimonial-text">
+              “I’m in a cut phase and the Shred stack keeps my energy high while staying lean. Transparent labels
+              make it an easy recommendation.”
+            </p>
+            <p class="testimonial-author">— Jenna A., Physique Athlete</p>
+          </article>
         </div>
-        <p>&copy; 2024 TravelDreams. All rights reserved. | Privacy Policy | Terms of Service</p>
-        <p>📧 info@traveldreams.com | 📞 +1-800-TRAVEL-1</p>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <header class="section-header">
+          <h2>FAQ</h2>
+          <p>Have questions about dosing, timing, or stacking? Start here.</p>
+        </header>
+
+        <div class="faq-grid">
+          <details>
+            <summary>Are your products safe for drug-tested athletes?</summary>
+            <p>
+              Yes. IronFuel products are formulated without banned substances and produced in GMP-certified
+              facilities. However, always check with your federation and review our labels if you’re in a
+              drug-tested organization.
+            </p>
+          </details>
+          <details>
+            <summary>When should I take creatine for best results?</summary>
+            <p>
+              Timing is flexible. Most athletes take 3–5g of creatine daily, preferably close to their training
+              session, but consistency across weeks matters much more than timing within the day.
+            </p>
+          </details>
+          <details>
+            <summary>Do I need a loading phase?</summary>
+            <p>
+              A loading phase (20g daily for 5–7 days) can saturate muscles faster, but it’s not required. You’ll
+              reach similar saturation levels with a consistent 3–5g daily dose over a few weeks.
+            </p>
+          </details>
+          <details>
+            <summary>Do you ship internationally?</summary>
+            <p>
+              Yes, we ship worldwide. Shipping costs and delivery times vary by region and will be shown at
+              checkout before you confirm your order.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3 class="footer-heading">IronFuel Nutrition</h3>
+          <p class="footer-text">Serious supplements for serious lifters.</p>
+        </div>
+        <div>
+          <h4 class="footer-subheading">Support</h4>
+          <ul class="footer-links">
+            <li><a href="#faq">Help & FAQ</a></li>
+            <li><a href="#">Shipping & Returns</a></li>
+            <li><a href="#">Contact us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="footer-subheading">Stay in the loop</h4>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Subscribed to IronFuel updates!');">
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit" class="btn btn-small">Join Newsletter</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> IronFuel Nutrition. All rights reserved.</span>
+      </div>
     </footer>
+  </div>
 
-    <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
+  <!-- ================= CART SIDEBAR ================= -->
+  <aside id="cartSidebar" class="cart-sidebar" aria-label="Shopping cart" aria-hidden="true">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="icon-button" aria-label="Close cart">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="cart-empty">Your cart is empty. Start by adding some IronFuel power!</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-summary-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotal">$0.00</span>
+      </div>
+      <div class="cart-summary-row cart-summary-row--small">
+        <span>Shipping</span>
+        <span>Calculated at checkout</span>
+      </div>
+      <button id="checkoutButton" class="btn btn-primary btn-full">Checkout</button>
+      <p class="cart-note">* Demo only – no real payment is processed.</p>
+    </div>
+  </aside>
 
-        hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+  <div id="cartBackdrop" class="backdrop" hidden></div>
 
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                navLinks.classList.remove('active');
-            });
-        });
+  <noscript>
+    <div class="noscript-warning">
+      This shop uses JavaScript for product filtering and cart interactions. Please enable JavaScript in your
+      browser for the full experience.
+    </div>
+  </noscript>
 
-        document.getElementById('bookingForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            alert('Thank you for your booking request! Our team will contact you within 24 hours.');
-            e.target.reset();
-        });
-
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>
