@@ -1,0 +1,66 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.65rem 1.4rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.1s ease-out, box-shadow 0.12s ease-out, background 0.15s ease-out,
+    color 0.15s ease-out;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #ff3344, #ff8a3c);
+  color: #fff;
+  box-shadow: 0 14px 30px rgba(255, 51, 68, 0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 18px 36px rgba(255, 51, 68, 0.55);
+}
+
+.btn-secondary {
+  background: linear-gradient(135deg, #27293d, #131622);
+  color: #f5f5f7;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #e0e0f0;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.btn-small {
+  padding: 0.45rem 1rem;
+  font-size: 0.8rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.chip {
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(14, 16, 22, 0.9);
+  color: #e0e0f0;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.chip-active,
+.chip:hover {
+  background: linear-gradient(135deg, #ff3344, #ff8a3c);
+  border-color: transparent;
+}

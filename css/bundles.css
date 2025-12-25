@@ -1,0 +1,77 @@
+.bundles-section {
+  padding: 3rem 0 3.5rem;
+  background: radial-gradient(circle at top left, #1a1c28 0, #060712 40%, #030308 100%);
+}
+
+.bundles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.bundle-card {
+  position: relative;
+  border-radius: 18px;
+  padding: 1.2rem 1rem 1.1rem;
+  background: linear-gradient(145deg, #151728, #070814);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.bundle-badge {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.9rem;
+  padding: 0.18rem 0.6rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  border-radius: 999px;
+  background: rgba(255, 51, 68, 0.18);
+  border: 1px solid rgba(255, 51, 68, 0.7);
+}
+
+.bundle-badge--blue {
+  background: rgba(61, 130, 245, 0.18);
+  border-color: rgba(61, 130, 245, 0.7);
+}
+
+.bundle-badge--green {
+  background: rgba(44, 184, 124, 0.18);
+  border-color: rgba(44, 184, 124, 0.7);
+}
+
+.bundle-meta {
+  font-size: 0.8rem;
+  color: #9b9bb2;
+}
+
+.bundle-list {
+  list-style: none;
+  font-size: 0.84rem;
+  color: #d7d7eb;
+}
+
+.bundle-list li + li {
+  margin-top: 0.25rem;
+}
+
+.bundle-bottom {
+  margin-top: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bundle-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.bundle-savings {
+  display: block;
+  font-size: 0.75rem;
+  color: #59d38e;
+}

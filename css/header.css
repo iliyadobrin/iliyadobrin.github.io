@@ -1,0 +1,101 @@
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  backdrop-filter: blur(18px);
+  background: linear-gradient(to bottom, rgba(5, 5, 10, 0.96), rgba(5, 5, 10, 0.75));
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  gap: 1.5rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.logo-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  background: conic-gradient(from 210deg, #ff3344, #ff8a3c, #ff3344);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.08em;
+  color: #fff;
+}
+
+.logo-text .brand {
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.logo-text .tagline {
+  font-size: 0.7rem;
+  color: #9b9bb2;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.main-nav a {
+  position: relative;
+  padding-bottom: 0.25rem;
+  color: #d7d7eb;
+}
+
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #ff3344, #ffb347);
+  transition: width 0.18s ease-out;
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.cart-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: radial-gradient(circle at 0 0, rgba(255, 51, 68, 0.3), rgba(7, 9, 14, 0.97));
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.cart-count {
+  min-width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: #ff3344;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+}

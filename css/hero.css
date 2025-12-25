@@ -1,0 +1,133 @@
+.hero {
+  padding: 3.5rem 0 3rem;
+}
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.4fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero-copy .eyebrow {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  color: #ff8a3c;
+  margin-bottom: 0.7rem;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2.4rem, 5vw, 3.3rem);
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+.hero-copy h1 span {
+  color: #ff445a;
+}
+
+.hero-text {
+  color: #a1a1b5;
+  max-width: 540px;
+  margin-bottom: 1.4rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.hero-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.hero-highlights .highlight-number {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.hero-highlights .highlight-label {
+  color: #a1a1b5;
+  font-size: 0.85rem;
+}
+
+.hero-media {
+  position: relative;
+  height: 320px;
+}
+
+.hero-bottle {
+  position: absolute;
+  border-radius: 18px;
+  background: linear-gradient(160deg, #1b1e2c, #05060a);
+  box-shadow: 0 24px 40px rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.hero-bottle::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  border-radius: 12px;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.9;
+}
+
+.hero-bottle--large {
+  width: 52%;
+  height: 100%;
+  left: 16%;
+  top: 0;
+}
+
+.hero-bottle--large::before {
+  background-image: url(/iliyadobrin.github.io/images/femaledrinking.webp);
+}
+
+.hero-bottle--medium {
+  width: 34%;
+  height: 64%;
+  right: 0;
+  bottom: 4%;
+}
+
+.hero-bottle--medium::before {
+  background-image: url(/iliyadobrin.github.io/images/femalefitness.webp);
+}
+
+.hero-bottle--small {
+  width: 30%;
+  height: 52%;
+  left: 0;
+  bottom: 8%;
+}
+
+.hero-bottle--small::before {
+  background-image: url(/iliyadobrin.github.io/images/malefitness.webp);
+}
+
+.hero-badge {
+  position: absolute;
+  right: -10px;
+  top: 16px;
+  padding: 0.5rem 0.8rem;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  font-size: 0.8rem;
+}
+
+.hero-badge--secondary {
+  right: auto;
+  left: -10px;
+  top: auto;
+  bottom: 20px;
+  background: #0c141f;
+}

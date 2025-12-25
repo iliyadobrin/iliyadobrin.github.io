@@ -1,0 +1,27 @@
+.testimonials-section {
+  padding: 3rem 0 3.4rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.3rem;
+}
+
+.testimonial-card {
+  border-radius: 16px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #171828, #070814);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.testimonial-text {
+  font-size: 0.86rem;
+  color: #d7d7eb;
+}
+
+.testimonial-author {
+  margin-top: 0.6rem;
+  font-size: 0.8rem;
+  color: #9b9bb2;
+}
